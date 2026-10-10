@@ -1,0 +1,26 @@
+# data and outputs (keep the documentation in data/)
+data/*
+!data/README.md
+!data/excluded_images.txt
+runs/
+outputs/
+results/
+weights/
+*.pth
+*.pth.tar
+*.pt
+*.ckpt
+*.zip
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

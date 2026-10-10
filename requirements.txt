@@ -1,0 +1,10 @@
+torch>=2.1
+albumentations==1.4.20      # version used in the paper
+opencv-python-headless>=4.8
+scikit-image>=0.21
+numpy
+Pillow
+pandas
+PyYAML
+tqdm
+transformers>=4.38          # Depth Anything

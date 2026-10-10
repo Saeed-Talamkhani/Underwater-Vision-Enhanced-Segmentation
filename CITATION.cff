@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Underwater vision-enhanced image segmentation (code)"
+type: software
+authors:
+  - family-names: Talamkhani
+    given-names: Saeed
+    affiliation: Stevens Institute of Technology
+  - family-names: Liu
+    given-names: Kaijian
+    affiliation: Stevens Institute of Technology
+repository-code: "https://github.com/Saeed-Talamkhani/underwater-vision-segmentation"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Underwater vision-enhanced image segmentation for supporting automated inspection of underwater bridge components"
+  authors:
+    - family-names: Talamkhani
+      given-names: Saeed
+    - family-names: Liu
+      given-names: Kaijian
+  journal: "Automation in Construction"
+  volume: 175
+  start: 106230
+  year: 2025
+  doi: "10.1016/j.autcon.2025.106230"
