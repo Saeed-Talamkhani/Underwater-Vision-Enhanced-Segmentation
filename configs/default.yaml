@@ -1,0 +1,33 @@
+# Configuration used in the paper (Talamkhani & Liu, Automation in Construction, 2025).
+# Any value can be overridden from the command line, e.g. --data-root, --epochs, --batch-size.
+
+seed: 42
+output_dir: runs/unet5c
+
+data:
+  root: data
+  # Folder patterns relative to `root`; {split} is train, val or test.
+  # For a flat layout such as data/train_images, use "{split}_images", "{split}_masks", "{split}_depth".
+  images_dir: "{split}/images"
+  masks_dir: "{split}/masks"
+  depth_dir: "{split}/depth"      # created automatically if missing
+  image_size: [160, 240]          # network input (height, width); must be divisible by 16
+  num_workers: 2
+
+depth:
+  model_id: LiheYoung/depth-anything-large-hf   # Depth Anything ViT-L
+
+model:
+  out_channels: 1
+  features: [64, 128, 256, 512]
+
+train:
+  epochs: 60
+  batch_size: 16
+  lr: 1.0e-4
+  patience: 20                    # early stopping on validation loss
+  amp: true                       # mixed precision on GPU
+  loss:
+    name: focal
+    alpha: 1.0
+    gamma: 2.0
