@@ -1,0 +1,22 @@
+# Images left out of the combined validation + test evaluation in the original experiments.
+# Use with: python evaluate.py --split val,test --exclude-list data/excluded_images.txt
+v13_00769.png
+v13_00937.png
+v13_00949.png
+v13_00997.png
+v13_01009.png
+v13_01609.png
+v13_01843.png
+v13_04891.png
+v13_04951.png
+v13_05227.png
+v13_07255.png
+v13_07261.png
+v13_07267.png
+v13_07273.png
+v13_07279.png
+v14_02935.png
+v14_03247.png
+v14_04963.png
+v14_06001.png
+v14_06217.png
